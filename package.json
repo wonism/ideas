@@ -1,0 +1,29 @@
+{
+  "name": "ideas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"$(npx js-yaml ./main.yml > main.json)\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wonism/ideas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wonism/ideas/issues"
+  },
+  "homepage": "https://github.com/wonism/ideas#readme",
+  "devDependencies": {
+    "husky": "^1.0.0-rc.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm start"
+    }
+  }
+}
