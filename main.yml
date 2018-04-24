@@ -1,0 +1,26 @@
+data:
+  todos:
+    - content: 크롬 익스텐션(특수문자 검색기) 업데이트 하기
+      createdAt: 2018-04-25
+      doneAt: null
+    - content: 블로그에 JS 관련 RSS 피드 읽어오는 기능 추가하기
+      createdAt: 2018-04-25
+      doneAt: null
+    - content: Ethereum DApp 관련 공부하기
+      createdAt: 2018-04-25
+      doneAt: null
+  til:
+    - content: |
+        ## 깃허브 커밋 시 공동 저자 입력(?)하기
+
+        ```
+        Commit message
+
+        Co-authored-by: Joel Califa <602352+califa@users.noreply.github.com>
+        Co-authored-by: Matt Clark <44023+mclark@users.noreply.github.com>
+        ```
+      reference: https://blog.github.com/2018-01-29-commit-together-with-co-authors/
+      createdAt: 2018-04-25
+  bookmarks:
+    - name: The Dev Community
+      link: http://dev.to/
