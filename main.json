@@ -24,20 +24,29 @@
     ],
     "til": [
       {
-        "content": "## 깃허브 커밋 시 공동 저자 입력(?)하기\n\n```\nCommit message\n\nCo-authored-by: Joel Califa <602352+califa@users.noreply.github.com>\nCo-authored-by: Matt Clark <44023+mclark@users.noreply.github.com>\n```\n",
+        "content": "## 깃허브 커밋 시 공동 저자 입력(?)하기\n\n```\nCommit message\n\nCo-authored-by: Joel Califa <602352+califa@users.noreply.github.com>\nCo-authored-by: Matt Clark <44023+mclark@users.noreply.github.com>\n```\n\nref. https://blog.github.com/2018-01-29-commit-together-with-co-authors/\n",
         "reference": "https://blog.github.com/2018-01-29-commit-together-with-co-authors/",
         "createdAt": "2018-04-25T00:00:00.000Z"
       },
       {
-        "content": "## with 문\n\n```\nconst a = document.createElement('a');\nwith (a) {\n  setAttribute ('href', 'https://www.google.com/');\n  // use setAttribute instead of a.setAttribute\n}\n```\n",
+        "content": "## with 문\n\n```\nconst a = document.createElement('a');\nwith (a) {\n  setAttribute ('href', 'https://www.google.com/');\n  // use setAttribute instead of a.setAttribute\n}\n```\n\nref. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/with\n",
         "reference": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/with",
         "createdAt": "2018-04-29T00:00:00.000Z"
+      },
+      {
+        "content": "## 문자열 치환 시 new line 추가\n\n다음과 같은 텍스트 파일이 있다고 가정한다.\n\n```\nI want to add new line from here. blah~ blah~\n```\n\n`here.` 부분에서 새로운 라인을 추가하고자 한다면,\n`:%s/here\\.\\s/here.^M`을 입력한 뒤, `Return`한다.\n\n여기서 중요한 것은, `^M`은 `Ctrl + V + M`을 통해 입력해야한다는 것이다.\n(`Ctrl`은 `M`을 누를 때까지 누르고 있어야 한다.)\n",
+        "reference": null,
+        "createdAt": "2018-05-02T00:00:00.000Z"
       }
     ],
     "bookmarks": [
       {
         "name": "The Dev Community",
         "link": "http://dev.to/"
+      },
+      {
+        "name": "5 Ideas a day",
+        "link": "https://www.fiveideasaday.com/"
       }
     ]
   }

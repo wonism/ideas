@@ -22,6 +22,8 @@ data:
         Co-authored-by: Joel Califa <602352+califa@users.noreply.github.com>
         Co-authored-by: Matt Clark <44023+mclark@users.noreply.github.com>
         ```
+
+        ref. https://blog.github.com/2018-01-29-commit-together-with-co-authors/
       reference: https://blog.github.com/2018-01-29-commit-together-with-co-authors/
       createdAt: 2018-04-25
     - content: |
@@ -34,8 +36,28 @@ data:
           // use setAttribute instead of a.setAttribute
         }
         ```
+
+        ref. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/with
       reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/with
       createdAt: 2018-04-29
+    - content: |
+        ## 문자열 치환 시 new line 추가
+
+        다음과 같은 텍스트 파일이 있다고 가정한다.
+
+        ```
+        I want to add new line from here. blah~ blah~
+        ```
+
+        `here.` 부분에서 새로운 라인을 추가하고자 한다면,
+        `:%s/here\.\s/here.^M`을 입력한 뒤, `Return`한다.
+
+        여기서 중요한 것은, `^M`은 `Ctrl + V + M`을 통해 입력해야한다는 것이다.
+        (`Ctrl`은 `M`을 누를 때까지 누르고 있어야 한다.)
+      reference: null
+      createdAt: 2018-05-02
   bookmarks:
     - name: The Dev Community
       link: http://dev.to/
+    - name: 5 Ideas a day
+      link: https://www.fiveideasaday.com/
