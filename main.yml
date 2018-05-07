@@ -56,6 +56,22 @@ data:
         (`Ctrl`은 `M`을 누를 때까지 누르고 있어야 한다.)
       reference: null
       createdAt: 2018-05-02
+    - content: |
+        ## webpack UMD 라이브러리 번들링 시 글로벌 변수
+
+        `webpack`의 `configuration`에서 `output.libraryTarget`을 `UMD`(Universal Module Definition)로 설정하면, `globalObject`는 `window`를 기본값으로 하여 번들링이 된다.
+
+        `window`와 같은 변수를 사용하지 못하는 환경을 고려해야한다면, `globalObject`를 `this`로 한다.
+
+        ```
+        output: {
+          ...
+          libraryTarget: 'umd',
+          globalObject: 'this',
+        },
+        ```
+      reference: null
+      createdAt: 2018-05-08
   bookmarks:
     - name: The Dev Community
       link: http://dev.to/

@@ -37,6 +37,11 @@
         "content": "## 문자열 치환 시 new line 추가\n\n다음과 같은 텍스트 파일이 있다고 가정한다.\n\n```\nI want to add new line from here. blah~ blah~\n```\n\n`here.` 부분에서 새로운 라인을 추가하고자 한다면,\n`:%s/here\\.\\s/here.^M`을 입력한 뒤, `Return`한다.\n\n여기서 중요한 것은, `^M`은 `Ctrl + V + M`을 통해 입력해야한다는 것이다.\n(`Ctrl`은 `M`을 누를 때까지 누르고 있어야 한다.)\n",
         "reference": null,
         "createdAt": "2018-05-02T00:00:00.000Z"
+      },
+      {
+        "content": "## webpack UMD 라이브러리 번들링 시 글로벌 변수\n\n`webpack`의 `configuration`에서 `output.libraryTarget`을 `UMD`(Universal Module Definition)로 설정하면, `globalObject`는 `window`를 기본값으로 하여 번들링이 된다.\n\n`window`와 같은 변수를 사용하지 못하는 환경을 고려해야한다면, `globalObject`를 `this`로 한다.\n\n```\noutput: {\n  ...\n  libraryTarget: 'umd',\n  globalObject: 'this',\n},\n```\n",
+        "reference": null,
+        "createdAt": "2018-05-08T00:00:00.000Z"
       }
     ],
     "bookmarks": [
