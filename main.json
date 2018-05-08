@@ -42,6 +42,11 @@
         "content": "## webpack UMD 라이브러리 번들링 시 글로벌 변수\n\n`webpack`의 `configuration`에서 `output.libraryTarget`을 `UMD`(Universal Module Definition)로 설정하면, `globalObject`는 `window`를 기본값으로 하여 번들링이 된다.\n\n`window`와 같은 변수를 사용하지 못하는 환경을 고려해야한다면, `globalObject`를 `this`로 한다.\n\n```\noutput: {\n  ...\n  libraryTarget: 'umd',\n  globalObject: 'this',\n},\n```\n",
         "reference": null,
         "createdAt": "2018-05-08T00:00:00.000Z"
+      },
+      {
+        "content": "## 지워진 브랜치 복구하기\n\n`git reflog` 명렁어를 이용한다.\n(이 명령어는 `HEAD`가 가리키는 커밋이 바뀔 때마다 해당 커밋을 기록한다.)\n\n사용 예는 다음과 같다.\n\n```\n# on master branch\n$ git branch -D foo\n$ git reflog\n821fee9 (HEAD -> master, origin/master, origin/foo) HEAD@{0}: checkout: moving from foo to master\n821fee9 (HEAD -> master, origin/master, origin/foo) HEAD@{1}: checkout: moving from master to foo\n# above 2 commits have different sha if commit log is different with each other\n$ git checkout 821fee9 # checkout with hash\n$ git checkout -b foo # create new branch\n```\n",
+        "reference": "https://stackoverflow.com/questions/3640764/can-i-recover-a-branch-after-its-deletion-in-git",
+        "createdAt": "2018-05-09T00:00:00.000Z"
       }
     ],
     "bookmarks": [

@@ -72,6 +72,26 @@ data:
         ```
       reference: null
       createdAt: 2018-05-08
+    - content: |
+        ## 지워진 브랜치 복구하기
+
+        `git reflog` 명렁어를 이용한다.
+        (이 명령어는 `HEAD`가 가리키는 커밋이 바뀔 때마다 해당 커밋을 기록한다.)
+
+        사용 예는 다음과 같다.
+
+        ```
+        # on master branch
+        $ git branch -D foo
+        $ git reflog
+        821fee9 (HEAD -> master, origin/master, origin/foo) HEAD@{0}: checkout: moving from foo to master
+        821fee9 (HEAD -> master, origin/master, origin/foo) HEAD@{1}: checkout: moving from master to foo
+        # above 2 commits have different sha if commit log is different with each other
+        $ git checkout 821fee9 # checkout with hash
+        $ git checkout -b foo # create new branch
+        ```
+      reference: https://stackoverflow.com/questions/3640764/can-i-recover-a-branch-after-its-deletion-in-git
+      createdAt: 2018-05-09
   bookmarks:
     - name: The Dev Community
       link: http://dev.to/
