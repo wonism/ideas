@@ -47,6 +47,11 @@
         "content": "## 지워진 브랜치 복구하기\n\n`git reflog` 명렁어를 이용한다.\n(이 명령어는 `HEAD`가 가리키는 커밋이 바뀔 때마다 해당 커밋을 기록한다.)\n\n사용 예는 다음과 같다.\n\n```\n# on master branch\n$ git branch -D foo\n$ git reflog\n821fee9 (HEAD -> master, origin/master, origin/foo) HEAD@{0}: checkout: moving from foo to master\n821fee9 (HEAD -> master, origin/master, origin/foo) HEAD@{1}: checkout: moving from master to foo\n# above 2 commits have different sha if commit log is different with each other\n$ git checkout 821fee9 # checkout with hash\n$ git checkout -b foo # create new branch\n```\n",
         "reference": "https://stackoverflow.com/questions/3640764/can-i-recover-a-branch-after-its-deletion-in-git",
         "createdAt": "2018-05-09T00:00:00.000Z"
+      },
+      {
+        "content": "## ReactJS의 displayName\n\n일반적으로 `React Developer Tools`에서 디버깅을 할 때 컴퍼넌트의 이름은 함수 혹은 클래스 이름에서 온다.\n\n동일한 이름의 컴퍼넌트들을 구분하거나, `production`용으로 배포된 애플리케이션 등을 볼 때, `displayName` 값을 할당해주면, 쉽게 디버깅할 수 있다.\n",
+        "reference": "https://reactjs.org/docs/react-component.html#displayname",
+        "createdAt": "2018-05-14T00:00:00.000Z"
       }
     ],
     "bookmarks": [

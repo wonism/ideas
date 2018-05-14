@@ -92,6 +92,14 @@ data:
         ```
       reference: https://stackoverflow.com/questions/3640764/can-i-recover-a-branch-after-its-deletion-in-git
       createdAt: 2018-05-09
+    - content: |
+        ## ReactJS의 displayName
+
+        일반적으로 `React Developer Tools`에서 디버깅을 할 때 컴퍼넌트의 이름은 함수 혹은 클래스 이름에서 온다.
+
+        동일한 이름의 컴퍼넌트들을 구분하거나, `production`용으로 배포된 애플리케이션 등을 볼 때, `displayName` 값을 할당해주면, 쉽게 디버깅할 수 있다.
+      reference: https://reactjs.org/docs/react-component.html#displayname
+      createdAt: 2018-05-14
   bookmarks:
     - name: The Dev Community
       link: http://dev.to/
